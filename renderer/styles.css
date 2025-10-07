@@ -1,0 +1,8 @@
+body { font-family: Arial, sans-serif; background: #f7f9fc; margin: 0; padding: 20px; }
+.container { width: 700px; margin: auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+h1 { margin-bottom: 20px; }
+.row { margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
+.row label { width: 140px; font-weight: bold; }
+.row input { flex: 1; padding: 6px; }
+button { padding: 6px 12px; cursor: pointer; }
+#status { margin-top: 20px; font-weight: bold; }

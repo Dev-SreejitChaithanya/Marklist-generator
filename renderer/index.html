@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Marklist Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="logo.png" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Marklist Generator</h1>
+      <div class="row">
+        <label>Excel File</label>
+        <input id="excelPath" type="text" readonly />
+        <button id="btnBrowseExcel">Browse</button>
+      </div>
+
+      <div class="row">
+        <label>Output Folder</label>
+        <input id="outputPath" type="text" readonly />
+        <button id="btnBrowseOutput">Browse</button>
+      </div>
+
+      <div class="row">
+        <label>Course Name</label>
+        <input id="courseName" type="text" />
+      </div>
+
+      <div class="row">
+        <label>Course Duration</label>
+        <input id="courseDuration" type="text" />
+      </div>
+
+      <div class="row">
+        <label>Date (DD-MM-YYYY)</label>
+        <input id="dateStr" type="text" />
+      </div>
+
+      <div class="row">
+        <button id="btnGenerate">Generate Marklists</button>
+      </div>
+
+      <div id="status">Ready</div>
+    </div>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>

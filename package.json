@@ -1,0 +1,47 @@
+{
+  "name": "marklist-electron",
+  "version": "1.0.0",
+  "description": "Marklist Generator (Electron)",
+  "main": "main.js",
+  "author": "SreejitChaithanya",
+  "scripts": {
+    "dev": "electron .",
+    "build": "electron-builder",
+    "pack": "electron-packager . MarklistApp --platform=win32 --arch=x64 --out=dist --overwrite"
+  },
+  "build": {
+    "appId": "com.aesthetix.marklist",
+    "productName": "NSDC Marklist Generator",
+    "files": [
+      "main.js",
+      "preload.js",
+      "renderer/**/*",
+      "template.docx",
+      "package.json"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "win": {
+      "icon": "assets/icon.ico",
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  },
+  "dependencies": {
+    "docx": "^8.4.0",
+    "docxtemplater": "^3.66.0",
+    "pizzip": "^3.2.0",
+    "xlsx": "^0.18"
+  },
+  "devDependencies": {
+    "electron": "^26.0.0",
+    "electron-builder": "^26.0.12",
+    "electron-packager": "^17.1.0"
+  }
+}
